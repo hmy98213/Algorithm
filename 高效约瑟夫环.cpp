@@ -5,6 +5,7 @@
 //  Created by 黄鸣宇 on 2017/2/7.
 //  Copyright © 2017年 黄鸣宇. All rights reserved.
 //
+//51nod 1074 约瑟夫环v2
 #include <iostream>
 #include <memory.h>
 #include <math.h>
@@ -20,6 +21,7 @@ int main(void)
             x=i;
         }
     }
+    //大部分情况下无需一个个递推，而可以直接向后递推(i-x)/k个
     for( i=i-1; i < n; ) {
         y=(i-x)/k;
         if (y+i>n) {
